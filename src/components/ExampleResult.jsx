@@ -55,7 +55,7 @@ export default function ExampleResult({ config = defaultConfig }) {
                 Tu comparativa de precios — Obrika
               </p>
               <p className="font-body text-xs text-white/40 mt-0.5">
-                De: hola@obrika.es &nbsp;·&nbsp; Para: tu@email.com
+                De: obrika.info@gmail.com &nbsp;·&nbsp; Para: tu@email.com
               </p>
             </div>
             <div className="ml-auto flex items-center gap-1.5 shrink-0">

@@ -118,8 +118,8 @@ export default function Home() {
         <div className="mt-auto pt-16 text-center">
           <p className="font-sans text-xs text-white/25">
             Obra &copy; {new Date().getFullYear()} &middot; Málaga &middot;{' '}
-            <a href="mailto:contacto@obrika.es" className="hover:text-white/40 transition-colors">
-              contacto@obrika.es
+            <a href="mailto:obrika.info@gmail.com" className="hover:text-white/40 transition-colors">
+              obrika.info@gmail.com
             </a>
           </p>
         </div>

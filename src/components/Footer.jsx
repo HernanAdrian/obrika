@@ -18,8 +18,8 @@ export default function Footer() {
             Legal
           </a>
           <span className="text-white/15">·</span>
-          <a href="mailto:contacto@obrika.es" className="hover:text-white/60 transition-colors">
-            contacto@obrika.es
+          <a href="mailto:obrika.info@gmail.com" className="hover:text-white/60 transition-colors">
+            obrika.info@gmail.com
           </a>
         </div>
       </div>

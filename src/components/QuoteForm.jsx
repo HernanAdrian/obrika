@@ -185,7 +185,7 @@ export default function QuoteForm({ compact = false, config = {} }) {
           {status === 'submitting' ? 'Enviando...' : 'Pedir mis presupuestos →'}
         </button>
         {status === 'error' && (
-          <p className="w-full text-red-500 text-xs mt-1">Algo ha fallado. Escríbenos a contacto@obrika.es</p>
+          <p className="w-full text-red-500 text-xs mt-1">Algo ha fallado. Escríbenos a obrika.info@gmail.com</p>
         )}
       </form>
     )
@@ -589,7 +589,7 @@ export default function QuoteForm({ compact = false, config = {} }) {
 
         {status === 'error' && (
           <p className="text-center text-red-500 text-sm">
-            Algo ha fallado. Escríbenos a contacto@obrika.es
+            Algo ha fallado. Escríbenos a obrika.info@gmail.com
           </p>
         )}
 

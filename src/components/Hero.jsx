@@ -72,11 +72,11 @@ export default function Hero({ config = {} }) {
             {subheadline}
           </p>
 
-          <div className="mt-8 flex flex-wrap justify-center gap-4">
+          <div className="mt-8 grid grid-cols-3 md:flex md:flex-wrap justify-center gap-3 md:gap-4 w-full md:w-auto">
             {stats.map((s) => (
               <div
                 key={s.label}
-                className="flex flex-col items-center text-center rounded-xl px-7 py-5 min-w-[140px] overflow-hidden"
+                className="flex flex-col items-center text-center rounded-xl px-3 py-3 md:px-7 md:py-5 md:min-w-[140px] overflow-hidden"
                 style={{
                   background: 'linear-gradient(145deg, rgba(27,45,79,0.85) 0%, rgba(17,24,39,0.70) 100%)',
                   border: '1px solid rgba(232,136,42,0.25)',
@@ -84,15 +84,15 @@ export default function Hero({ config = {} }) {
                   boxShadow: '0 8px 32px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.06)',
                 }}
               >
-                <span className="text-accent mb-3 opacity-90">{s.icon}</span>
+                <span className="hidden md:block text-accent mb-3 opacity-90">{s.icon}</span>
                 <p
                   className="font-display font-extrabold text-white leading-none"
-                  style={{ fontSize: '3rem', lineHeight: 1, textShadow: '0 0 24px rgba(232,136,42,0.35)' }}
+                  style={{ fontSize: 'clamp(1.75rem, 5vw, 3rem)', lineHeight: 1, textShadow: '0 0 24px rgba(232,136,42,0.35)' }}
                 >
                   {s.number}
                 </p>
-                <div className="mt-2 mb-2.5 w-8 h-[2px] rounded-full bg-accent opacity-60" />
-                <p className="font-sans text-[11px] font-medium text-white/75 leading-tight whitespace-pre-line">
+                <div className="mt-1.5 mb-1.5 md:mt-2 md:mb-2.5 w-6 md:w-8 h-[2px] rounded-full bg-accent opacity-60" />
+                <p className="font-sans text-[10px] md:text-[11px] font-medium text-white/75 leading-tight whitespace-pre-line">
                   {s.label}
                 </p>
               </div>
