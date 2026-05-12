@@ -12,6 +12,7 @@ import Footer from '../components/Footer'
 export default function LandingSegmento({ segment }) {
   useEffect(() => {
     document.title = `Obrika — ${segment.homeCard.title} en Málaga`
+    if (typeof fbq !== 'undefined') fbq('track', 'ViewContent', { content_name: segment.id })
   }, [segment])
 
   return (

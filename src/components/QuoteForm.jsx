@@ -111,6 +111,7 @@ export default function QuoteForm({ compact = false, config = {} }) {
       const res = await fetch('/', { method: 'POST', body: formData })
       if (!res.ok) throw new Error('bad response')
       setStatus('success')
+      if (typeof fbq !== 'undefined') fbq('track', 'Lead')
     } catch {
       setStatus('error')
     }
